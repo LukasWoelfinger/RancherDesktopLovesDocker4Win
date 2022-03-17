@@ -41,7 +41,7 @@ As mentioned in [Rancher Desktop documentation](https://docs.rancherdesktop.io/g
    ```
 
 1. Restart the system
-1. Open _Windows_ PowerShell instance with elevated permissions and [import the module](#import-powershell-support-methods-) again
+1. Open _Windows_ PowerShell instance with elevated permissions and [import the module](#import-powershell-support-methods) again
 1. Ensure WSL is on latest version by executing `wsl --update` followed by `wsl --shutdown`
    output should be something like this:
 
@@ -72,7 +72,7 @@ To install Rancher Desktop, which is a separate solution from Rancher team and _
 
 The install method will download the given verion of Docker CLI from gitHub and install it to you local user applications folder. Afterwards it will register and start up the agent.
 
-1. [Prepare your PowerShell](#import-powershell-support-methods-)
+1. [Prepare your PowerShell](#import-powershell-support-methods)
 1. Execute `Install-DockerDeamon`
 
 > **👍** Take care
@@ -83,11 +83,11 @@ The install method will download the given verion of Docker CLI from gitHub and 
 
 Docker compose can be installed with or without installing the Docker daemon for Windows containers. To use it everywhere it should be installed for Docker CLI in Windows and WSL separate.
 
-1. [Prepare your PowerShell](#import-powershell-support-methods-) For this case no elevated permissions are required. It can run in PowerShell or PowerShell Core
+1. [Prepare your PowerShell](#import-powershell-support-methods) For this case no elevated permissions are required. It can run in PowerShell or PowerShell Core
 1. Execute `Install-DockerComposeWin`
 1. Check availability with `docker compose version`
 1. Switch to "Rancher-Desktop" WSL distribution by enter `wsl -d Rancher-Desktop`
-1. Execute `./docker-compose_WSL.sh` > if you are facing issues "Could not resolve host: github.com" please check [Troubleshoot WSL DNS](#WSL-DNS)
+1. Execute `./docker-compose_WSL.sh` > if you are facing issues "Could not resolve host: github.com" please check [Troubleshoot WSL DNS](#Troubleshoot-WSL-DNS)
 1. Check availability with `docker compose version`
 1. Exit WSL `exit`
 1. Exit PowerShell
