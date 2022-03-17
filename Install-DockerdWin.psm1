@@ -1,13 +1,10 @@
 <#
  .Synopsis
-  Install Docker daemon for Windows.
+  Install and manage Docker daemon for Windows.
 
  .Description
+  This module contains gernal supportive methods to setup and manage Docker daemon on Windows
   Install Docker daemon for Windows. Execute with Windows Powershell (not Core) as administrator. 
-  Prerequirements: Installed Service Hyper-V, Compute
-
- .Parameter Start
-  The first month to display.
 
  .Example
    # Show a default display of this month. TODO
