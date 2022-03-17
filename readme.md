@@ -130,12 +130,12 @@ Now the internet address should be reachable.
 If you’re already using Kubernetes contexts in your WSL, you will have to make some changes to you existing ~/kube/config:
 
 1. Backup your existing ~/.kube/config file 😊
-1. Backup any existing config files under /mnt/c/Users/**<your user id>**/.kube/
-1. copy existing ~/.kube/config to /mnt/c/Users/**<your user id>**/.kube/:
-   `cp ~/.kube/config /mnt/c/Users/**<your-user-id>**/.kube/`
-1. “Reset Kubernetes” in Rancher Desktop /Kubernetes Settings. This will create the context for Rancher Desktop in your /mnt/c/Users/**<your-user-id>**/.kube/config
+1. Backup any existing config files under /mnt/c/Users/**[your-user-id]**/.kube/
+1. copy existing ~/.kube/config to /mnt/c/Users/**[your-user-id]**/.kube/:
+   `cp ~/.kube/config /mnt/c/Users/**[your-user-id]**/.kube/`
+1. “Reset Kubernetes” in Rancher Desktop /Kubernetes Settings. This will create the context for Rancher Desktop in your /mnt/c/Users/**[your-user-id]**/.kube/config
 1. Create a symlink of your new, central .kube/config in WSL:
-   `ln -s /mnt/c/Users/**<your-user-id>**/.kube/config ~/.kube/config`
+   `ln -s /mnt/c/Users/**[your-user-id]**/.kube/config ~/.kube/config`
 1. Now you’re ready to change context to Rancher Desktop even in WSL
 
 <!-- ## Cleanup the mess
